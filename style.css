@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#canvas1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    /* filter: blur(5px) contrast(2); */
+
+}
+
+#audio1{
+    width: 30%;
+    height: 5%;
+    margin: 15px auto;
+    display: block;
+    color: #1E1E1E;
+    background-color: #1E1E1E;
+}
+
+#audio1::-webkit-media-controls-play-button,
+     #audio1::-webkit-media-controls-panel {
+     background-color: #30DFF2;
+     }
+
+#fileUpload{
+    position: absolute;
+    top: 50px;
+    color: #30DFF2;
+    z-index: 100;
+    background-color: black;
+}
+#fileUpload::file-selector-button{
+    color: #30DFF2;
+    background-color: black;
+    border-color: #252526;
+    cursor: pointer;
+}
+
+.SZ{
+    position:absolute;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    font-size: 105px;
+    font-family: Arial;
+
+    top: 42%;
+    left: 45.5%;
+}
+
+.S{
+    color: #c5f6fb;
+  text-shadow:
+      0 0 7px #0dcade,
+      0 0 10px #bdf4fa,
+      0 0 21px #aef2f9,
+      0 0 42px #0dcade,
+      0 0 82px #59e5f4,
+      0 0 92px #4ae3f3,
+      0 0 102px #3be0f2,
+      0 0 151px #30DFF2;
+}/*30DFF2*/
+
+
+.Z{
+    color: #fbd5fc;
+  text-shadow:
+      0 0 7px #f698f7,
+      0 0 10px #fac5fb,
+      0 0 21px #f8b6f9,
+      0 0 42px #f7a7f8,
+      0 0 82px #f698f7,
+      0 0 92px #f488f6,
+      0 0 102px #f379f5,
+      0 0 151px #f26af4;
+    
+}
+
+.circleSpin{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F5F5F5;
+    z-index: 100;
+    top: 36.5%;
+    left: 43.5%;
+    margin-right: -40.5%;
+    /* margin-top: 199px; 169 */
+    border-radius: 50%;
+    /* box-shadow: 10px 5px 5px white; */
+}
+
+
+.circleSpin::after{
+    content: "";
+    /* top: 36.5%;
+    left: 43.5%; */
+    width: 180px;
+    height: 180px;
+    border: 11px solid black;
+    border-radius: 50%;
+    animation: circleSpin 10s linear infinite;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: #30DFF2;
+    border-bottom-color: #EF44F2;
+}
+
+@keyframes circleSpin {
+    to {
+        transform: rotate(1turn);
+    }
+} 
+
+#buttons{
+    position: absolute;
+    top: 100px;
+    z-index: 100;
+}
+
+#button1{
+    color: #EF44F2;
+    background-color: black;
+    cursor:pointer;
+}
+#button2{
+    color: #EF44F2;
+    background-color: black;
+    cursor:pointer;
+}
+#button3{
+    color: #EF44F2;
+    background-color: black;
+    cursor:pointer;
+}
+#button4{
+    color: #EF44F2;
+    background-color: black;
+    cursor:pointer;
+}
+#button5{
+    color: #EF44F2;
+    background-color: black;
+    cursor:pointer;
+}
+#button6{
+    color: #EF44F2;
+    background-color: black;
+    cursor:pointer;
+}
+#button7{
+    color: #EF44F2;
+    background-color: black;
+    cursor:pointer;
+}
